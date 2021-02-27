@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>用户信息修改</title>
@@ -9,24 +9,24 @@
 <center>
     <h1>修改信息</h1>
 
-    <form action="./updateUser" method="post">
+    <form action="./toUpdate" method="post">
         <table>
             <tr>
                 <td>用户名</td>
                 <!-- 表单中所有的输入框都要指定name属性,否则提交时会被忽略 -->
-                <td><input name="user"  value="aaa" type="text"></td>
+                <td><input name="user"  th:value="${user.username}" type="text"></td>
             </tr>
             <tr>
                 <td>密码</td>
-                <td><input name="password" type="password"></td>
+                <td><input name="password" th:value="${user.password}" type="password"></td>
             </tr>
             <tr>
                 <td>昵称</td>
-                <td><input name="nickname" type="text"></td>
+                <td><input name="nickname" th:value="${user.nickname}" type="text"></td>
             </tr>
             <tr>
                 <td>年龄</td>
-                <td><input name="age" type="number"></td>
+                <td><input name="age" th:value="${user.age}" type="number"></td>
             </tr>
             <tr>
                 <td style="text-align: center" colspan="2">

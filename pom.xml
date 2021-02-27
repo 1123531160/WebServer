@@ -21,6 +21,7 @@
         <module>V16</module>
         <module>V17</module>
         <module>V18</module>
+        <module>V19</module>
     </modules>
 
     <properties>
@@ -47,6 +48,11 @@
             <groupId>org.thymeleaf</groupId>
             <artifactId>thymeleaf</artifactId>
             <version>3.0.11.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
         </dependency>
     </dependencies>
 
